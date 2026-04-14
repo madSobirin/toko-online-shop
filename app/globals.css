@@ -1,26 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-label: "Plus Jakarta Sans", sans-serif;
+
+  --color-tertiary-dim: #6e494a;
+  --color-primary-container: #f3e2ac;
+  --color-inverse-surface: #0d0f0c;
+  --color-on-primary-container: #5d5128;
+  --color-surface: #fafaf5;
+  --color-primary-fixed-dim: #e5d49f;
+  --color-on-secondary-container: #515343;
+  --color-on-secondary: #fafae5;
+  --color-inverse-primary: #f9e7b1;
+  --color-inverse-on-surface: #9c9d99;
+  --color-on-secondary-fixed-variant: #5b5d4d;
+  --color-secondary-container: #e4e4cf;
+  --color-error: #9e422c;
+  --color-surface-bright: #fafaf5;
+  --color-on-error-container: #742410;
+  --color-surface-tint: #6a5e33;
+  --color-on-secondary-fixed: #3f4032;
+  --color-on-tertiary-container: #613e3f;
+  --color-on-primary: #fff7e7;
+  --color-error-container: #fe8b70;
+  --color-background: #fafaf5;
+  --color-surface-container-lowest: #ffffff;
+  --color-tertiary: #7b5556;
+  --color-primary: #6a5e33;
+  --color-tertiary-fixed-dim: #e9b8b8;
+  --color-surface-container: #ecefe7;
+  --color-on-background: #2e342d;
+  --color-tertiary-container: #f7c5c5;
+  --color-tertiary-fixed: #f7c5c5;
+  --color-on-surface-variant: #5b6159;
+  --color-secondary-fixed: #e4e4cf;
+  --color-on-tertiary-fixed: #4b2b2c;
+  --color-primary-fixed: #f3e2ac;
+  --color-secondary-dim: #535445;
+  --color-on-tertiary: #fff7f6;
+  --color-outline: #767c74;
+  --color-surface-container-high: #e5eae0;
+  --color-surface-container-low: #f3f4ee;
+  --color-secondary: #5f6050;
+  --color-error-dim: #5c1202;
+  --color-primary-dim: #5e5229;
+  --color-surface-container-highest: #dee4da;
+  --color-surface-variant: #dee4da;
+  --color-surface-dim: #d5dcd0;
+  --color-on-surface: #2e342d;
+  --color-outline-variant: #aeb4aa;
+  --color-on-primary-fixed: #493f17;
+  --color-on-error: #fff7f6;
+  --color-on-tertiary-fixed-variant: #6b4747;
+  --color-secondary-fixed-dim: #d5d6c1;
+  --color-on-primary-fixed-variant: #675b31;
+
+  --radius-xl: 1.5rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .primary-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--color-primary) 0%,
+      var(--color-primary-dim) 100%
+    );
+  }
+  .text-editorial-spacing {
+    letter-spacing: 0.1em;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-surface font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container;
 }
