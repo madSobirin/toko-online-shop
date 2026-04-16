@@ -1,9 +1,9 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import ProductGrid from "@/components/ProductGrid";
-import Testimonial from "@/components/Testimonial";
-import Newsletter from "@/components/Newsletter";
-import Footer from "@/components/Footer";
+import Header from "@/components/Home/Header";
+import Hero from "@/components/Home/Hero";
+import ProductGrid from "@/components/Home/ProductGrid";
+import Testimonial from "@/components/Home/Testimonial";
+import Newsletter from "@/components/Home/Newsletter";
+import Footer from "@/components/Home/Footer";
 
 export default function Home() {
   return (
