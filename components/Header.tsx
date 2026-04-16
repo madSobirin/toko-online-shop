@@ -17,19 +17,19 @@ export default function Header() {
 
         <nav className="hidden md:flex gap-8 items-center">
           <a
-            className="font-headline uppercase tracking-[0.1em] text-[12px] text-primary border-b border-primary pb-1"
+            className="font-headline uppercase tracking-widest text-[12px] text-primary border-b border-primary pb-1"
             href="#"
           >
             Shop
           </a>
           <a
-            className="font-headline uppercase tracking-[0.1em] text-[12px] text-secondary hover:text-primary transition-colors duration-300"
+            className="font-headline uppercase tracking-widest text-[12px] text-secondary hover:text-primary transition-colors duration-300"
             href="#"
           >
             Collections
           </a>
           <a
-            className="font-headline uppercase tracking-[0.1em] text-[12px] text-secondary hover:text-primary transition-colors duration-300"
+            className="font-headline uppercase tracking-widest text-[12px] text-secondary hover:text-primary transition-colors duration-300"
             href="#"
           >
             About

@@ -122,7 +122,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="px-12 py-8 border-t border-primary/5 text-center">
-        <p className="text-on-surface-variant/60 text-[10px] uppercase tracking-[0.1em]">
+        <p className="text-on-surface-variant/60 text-[10px] uppercase tracking-widest">
           © 2024 Lumière Hijab. All rights reserved.
         </p>
       </div>
