@@ -2,7 +2,6 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "motion/react";
 import { Eye, EyeOff, ArrowRight } from "lucide-react";
-// import Link from "next/link";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
