@@ -5,7 +5,7 @@ import { ArrowRight, Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
-export default function App() {
+export default function Register() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
