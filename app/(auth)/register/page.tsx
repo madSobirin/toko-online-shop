@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function App() {
   const [showPassword, setShowPassword] = useState(false);
@@ -211,16 +212,15 @@ export default function App() {
             </div>
           </form>
 
-          {/* Footer Action */}
           <footer className="mt-12 text-center">
             <p className="text-sm text-on-surface-variant font-light">
               Already a member?
-              <a
+              <Link
                 className="ml-2 text-primary font-semibold hover:underline underline-offset-8 transition-all"
-                href="#"
+                href="/login"
               >
                 Sign In
-              </a>
+              </Link>
             </p>
           </footer>
         </motion.div>
